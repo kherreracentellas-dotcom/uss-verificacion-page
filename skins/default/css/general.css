@@ -1,0 +1,413 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+  }
+  
+  /* line 22, ../sass/general.scss */
+  body {
+	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #edeef0;
+  }
+  
+  /* line 29, ../sass/general.scss */
+  header {
+	padding-top: 10px;
+  }
+  
+  /* fix tablas responsivas */
+  @media only screen and (max-width: 800px) {
+	/* line 36, ../sass/general.scss */
+	.responsive-table {
+	  /* Force table to not be like tables anymore */
+	  /* Hide table headers (but not display: none;, for accessibility) */
+	  /*
+	  Label the data
+	  */
+	}
+	/* line 39, ../sass/general.scss */
+	.responsive-table table,
+	.responsive-table thead,
+	.responsive-table tbody,
+	.responsive-table th,
+	.responsive-table td,
+	.responsive-table tr {
+	  display: block;
+	}
+	/* line 49, ../sass/general.scss */
+	.responsive-table thead tr {
+	  position: absolute;
+	  top: -9999px;
+	  left: -9999px;
+	}
+	/* line 55, ../sass/general.scss */
+	.responsive-table tr {
+	  border: 1px solid #ccc;
+	}
+	/* line 57, ../sass/general.scss */
+	.responsive-table td {
+	  /* Behave  like a "row" */
+	  border: none;
+	  border-bottom: 1px solid #eee;
+	  min-height: 35px;
+	  position: relative;
+	  padding-left: 50% !important;
+	  white-space: normal;
+	  text-align: left;
+	}
+	/* line 68, ../sass/general.scss */
+	.responsive-table td:before {
+	  /* Now like a table header */
+	  position: absolute;
+	  /* Top/left values mimic padding */
+	  top: 6px;
+	  left: 6px;
+	  width: 45%;
+	  padding-right: 10px;
+	  white-space: nowrap;
+	  text-align: left;
+	  font-weight: bold;
+	}
+	/* line 84, ../sass/general.scss */
+	.responsive-table td:before {
+	  content: attr(data-title);
+	}
+  }
+  /* line 90, ../sass/general.scss */
+  .form-acceso h1 {
+	margin-bottom: 10px;
+  }
+  /* line 93, ../sass/general.scss */
+  .form-acceso p {
+	margin-top: 10px;
+  }
+  /* line 101, ../sass/general.scss */
+  .form-acceso .img-fluid {
+	margin-top: 10px;
+  }
+  /* line 105, ../sass/general.scss */
+  .form-acceso .envoltura {
+	border-radius: 4px;
+	padding: 20px;
+  }
+  /* line 110, ../sass/general.scss */
+  .form-acceso p {
+	margin-top: 20px;
+  }
+  
+  /* line 120, ../sass/general.scss */
+  .img-fluid {
+	margin-bottom: 10px;
+	width: 200px;
+  }
+  
+  /* line 125, ../sass/general.scss */
+  .thead-dark th {
+	background-color: #4f4f4f !important;
+  }
+  
+  /*MENSAJES*/
+  /* line 131, ../sass/general.scss */
+  .messages li {
+	background: #4BB543;
+	border-radius: 5px;
+	margin: 5px 0;
+	padding: 15px;
+	color: #ffffff;
+  }
+  
+  /* line 139, ../sass/general.scss */
+  .errors {
+	background: transparent;
+	border: none;
+	padding: 0;
+  }
+  
+  /* line 144, ../sass/general.scss */
+  .errors li {
+	background: #cc0000;
+	margin: 5px 0;
+	border-radius: 5px;
+	padding: 15px;
+	color: #ffffff;
+  }
+  
+  /* line 152, ../sass/general.scss */
+  .navbar-toggler {
+	float: left;
+	padding-left: 0;
+	margin-bottom: 5px;
+  }
+  
+  /* line 158, ../sass/general.scss */
+  .usuario {
+	padding-right: 15px;
+  }
+  /* line 161, ../sass/general.scss */
+  .usuario .usuario_nombre {
+	margin-right: 10px;
+  }
+  
+  /* line 166, ../sass/general.scss */
+  .botonera-home {
+	width: 100%;
+	background: gray;
+  }
+  /* line 170, ../sass/general.scss */
+  .botonera-home li {
+	list-style-type: none;
+	width: 20%;
+	float: left;
+	text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+	/* line 170, ../sass/general.scss */
+	.botonera-home li {
+	  width: 100%;
+	}
+  }
+  /* line 180, ../sass/general.scss */
+  .botonera-home li.boton-home-1, .botonera-home li.boton-home-2, .botonera-home li.boton-home-3, .botonera-home li.boton-home-4, .botonera-home li.boton-home-5 {
+	background: gray;
+  }
+  /* line 186, ../sass/general.scss */
+  .botonera-home li:hover {
+	filter: brightness(105%);
+  }
+  /* line 190, ../sass/general.scss */
+  .botonera-home li a {
+	padding: 20px 20px 20px 80px;
+	display: inline-flex;
+	color: #ffffff;
+	width: 100%;
+	height: 80px;
+	position: relative;
+	cursor: pointer;
+  }
+  @media screen and (max-width: 1199px) {
+	/* line 190, ../sass/general.scss */
+	.botonera-home li a {
+	  padding: 20px 20px 20px 50px;
+	  height: 60px;
+	}
+  }
+  @media screen and (max-width: 991px) {
+	/* line 190, ../sass/general.scss */
+	.botonera-home li a {
+	  padding: 20px 20px 20px 15px;
+	}
+  }
+  @media screen and (max-width: 767px) {
+	/* line 190, ../sass/general.scss */
+	.botonera-home li a {
+	  padding: 15px 15px 15px 50px;
+	  height: 45px;
+	}
+  }
+  /* line 213, ../sass/general.scss */
+  .botonera-home li a:hover {
+	text-decoration: none;
+  }
+  /* line 217, ../sass/general.scss */
+  .botonera-home li a span {
+	line-height: 130%;
+	width: 90%;
+	display: inline-flex;
+	text-align: left;
+	align-items: center;
+  }
+  /* line 225, ../sass/general.scss */
+  .botonera-home li a img {
+	margin: 0 10px 0 -50px;
+	float: left;
+  }
+  @media screen and (max-width: 1199px) {
+	/* line 225, ../sass/general.scss */
+	.botonera-home li a img {
+	  margin: -5px 0 -5px -45px;
+	}
+  }
+  @media screen and (max-width: 991px) {
+	/* line 225, ../sass/general.scss */
+	.botonera-home li a img {
+	  display: none;
+	}
+  }
+  @media screen and (max-width: 767px) {
+	/* line 225, ../sass/general.scss */
+	.botonera-home li a img {
+	  display: block;
+	}
+  }
+  /* line 242, ../sass/general.scss */
+  .botonera-home li a .notificacion {
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: center;
+	background: #ffffff;
+	color: #eaeaea;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	line-height: 25px;
+	border-radius: 15px;
+  }
+  @media screen and (max-width: 1199px) {
+	/* line 242, ../sass/general.scss */
+	.botonera-home li a .notificacion {
+	  font-size: 8pt;
+	}
+  }
+  
+  /* line 266, ../sass/general.scss */
+  table.horario {
+	background: #f3f3f3;
+  }
+  @media screen and (max-width: 767px) {
+	/* line 266, ../sass/general.scss */
+	table.horario {
+	  display: none;
+	}
+  }
+  /* line 274, ../sass/general.scss */
+  table a {
+	color: #ffffff !important;
+  }
+  
+  /* line 279, ../sass/general.scss */
+  .descripcion {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+  }
+  
+  /* line 286, ../sass/general.scss */
+  .nomenclatura li {
+	list-style-type: none;
+	float: left;
+	margin-right: 15px;
+  }
+  /* line 291, ../sass/general.scss */
+  .nomenclatura li small {
+	display: flex;
+  }
+  /* line 295, ../sass/general.scss */
+  .nomenclatura li i {
+	width: 20px;
+	height: 20px;
+	float: left;
+	border-radius: 10px;
+	margin-right: 10px;
+  }
+  
+  /* line 306, ../sass/general.scss */
+  .cursos li {
+	padding: 10px 20px;
+	list-style-type: none;
+	border-bottom: 1px solid #eaeaea;
+  }
+  /* line 311, ../sass/general.scss */
+  .cursos li:hover {
+	background: rgba(234, 234, 234, 0.5);
+  }
+  
+  /* line 319, ../sass/general.scss */
+  .container-menu .navbar {
+	margin-left: -20px;
+  }
+  
+  /* line 324, ../sass/general.scss */
+  .container {
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  
+  /* line 329, ../sass/general.scss */
+  .contenido {
+	background: #ffffff;
+	padding-bottom: 20px;
+  }
+  /* line 333, ../sass/general.scss */
+  .contenido h2 {
+	padding: 10px 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 20px;
+  }
+  /* line 340, ../sass/general.scss */
+  .contenido .datos-usuario {
+	background: rgba(79, 79, 79, 0.05);
+	padding: 15px;
+	border-radius: 10px;
+  }
+  /* line 345, ../sass/general.scss */
+  .contenido .datos-usuario legend {
+	padding-top: 50px;
+	padding-bottom: 5px;
+	border-bottom: 3px solid rgba(79, 79, 79, 0.1);
+  }
+  
+  /* line 354, ../sass/general.scss */
+  .filtros .btn {
+	border-radius: 5px;
+	margin: 0 5px 10px 0;
+  }
+  /* line 358, ../sass/general.scss */
+  .filtros .btn:hover {
+	opacity: .8 !important;
+  }
+  /* line 362, ../sass/general.scss */
+  .filtros .btn .badge {
+	margin-left: 5px;
+  }
+  
+  /* line 368, ../sass/general.scss */
+  .nav-tabs {
+	margin-bottom: 20px;
+  }
+  /* line 373, ../sass/general.scss */
+  .nav-tabs .nav-item a {
+	color: #4f4f4f;
+  }
+  /* line 376, ../sass/general.scss */
+  .nav-tabs .nav-item a:hover {
+	background: #edeef0;
+	border-bottom: none;
+  }
+  
+  /* line 385, ../sass/general.scss */
+  .lista thead {
+	color: #ffffff !important;
+  }
+  /* line 388, ../sass/general.scss */
+  .lista thead th {
+	padding: 5px 10px;
+  }
+  /* line 394, ../sass/general.scss */
+  .lista td {
+	padding: 5px 10px;
+  }
+  
+  /* line 400, ../sass/general.scss */
+  .btn:hover {
+	opacity: .8;
+  }
+
+  div.error {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #f5c6cb;
+    padding: 25px;
+    margin-top: 25px;
+    color: #721c24;
+    background-color: #f8d7da;
+    /* border-color: #f5c6cb; */
+	border-radius: .25rem;
+}

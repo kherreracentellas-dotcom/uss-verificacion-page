@@ -1,0 +1,344 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 12, ../sass/estilo.scss */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* line 19, ../sass/estilo.scss */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edeef0;
+}
+
+/* line 26, ../sass/estilo.scss */
+header {
+  padding-top: 10px;
+  background-color: #ffffff;
+}
+
+/* line 37, ../sass/estilo.scss */
+.form-acceso h1 {
+  margin-bottom: 10px;
+}
+/* line 40, ../sass/estilo.scss */
+.form-acceso p {
+  margin-top: 10px;
+}
+/* line 44, ../sass/estilo.scss */
+.form-acceso h1, .form-acceso p {
+  color: #ffffff;
+}
+/* line 49, ../sass/estilo.scss */
+.form-acceso .img-fluid {
+  margin-top: 10px;
+}
+/* line 53, ../sass/estilo.scss */
+.form-acceso .envoltura {
+  background: #2f3744 url("../images/fr-flag.png") top left no-repeat;
+  background-size: 100% 3px;
+  border-radius: 4px;
+  padding: 25px 20px 20px 20px;
+}
+/* line 60, ../sass/estilo.scss */
+.form-acceso p {
+  margin-top: 20px;
+}
+/* line 63, ../sass/estilo.scss */
+.form-acceso p a {
+  color: #ffffff;
+}
+
+/* line 70, ../sass/estilo.scss */
+.intro h2 {
+  color: #ffffff;
+}
+
+/* line 75, ../sass/estilo.scss */
+.img-fluid {
+  margin: 0 0 10px 0px;
+  width: 180px;
+}
+
+/* line 80, ../sass/estilo.scss */
+.thead-dark th {
+  background-color: #4f4f4f !important;
+}
+
+/*MENSAJES*/
+/* line 86, ../sass/estilo.scss */
+.messages li {
+  background: #4BB543;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 15px;
+  color: #ffffff;
+}
+
+/* line 94, ../sass/estilo.scss */
+.errors {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* line 99, ../sass/estilo.scss */
+.errors li {
+  background: #cc0000;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+}
+
+/* line 107, ../sass/estilo.scss */
+.navbar-toggler {
+  float: left;
+  color: #2f3744;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+/* line 114, ../sass/estilo.scss */
+.usuario {
+  padding-right: 15px;
+}
+/* line 117, ../sass/estilo.scss */
+.usuario a {
+  color: #2f3744;
+}
+/* line 121, ../sass/estilo.scss */
+.usuario .usuario_nombre {
+  margin-right: 10px;
+}
+
+/* line 126, ../sass/estilo.scss */
+.botonera-home {
+  width: 100%;
+  background: gray;
+}
+/* line 130, ../sass/estilo.scss */
+.botonera-home li {
+  list-style-type: none;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+/* line 136, ../sass/estilo.scss */
+.botonera-home li.boton-home-1 {
+  background: #e64c33;
+}
+/* line 137, ../sass/estilo.scss */
+.botonera-home li.boton-home-2 {
+  background: #89868b;
+}
+/* line 138, ../sass/estilo.scss */
+.botonera-home li.boton-home-3 {
+  background: #51617b;
+}
+/* line 139, ../sass/estilo.scss */
+.botonera-home li.boton-home-4 {
+  background: #00ab86;
+}
+/* line 140, ../sass/estilo.scss */
+.botonera-home li.boton-home-5 {
+  background: #f0b853;
+}
+/* line 142, ../sass/estilo.scss */
+.botonera-home li:hover {
+  filter: brightness(105%);
+}
+/* line 146, ../sass/estilo.scss */
+.botonera-home li a {
+  padding: 20px;
+  padding-left: 80px;
+  display: inline-flex;
+  color: #ffffff;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 156, ../sass/estilo.scss */
+.botonera-home li a span {
+  line-height: 130%;
+  width: 90%;
+  display: inline-flex;
+  text-align: left;
+  align-items: center;
+}
+/* line 164, ../sass/estilo.scss */
+.botonera-home li a img {
+  margin: 0 10px 0 -50px;
+  float: left;
+}
+/* line 169, ../sass/estilo.scss */
+.botonera-home li a .notificacion {
+  background: #ffffff;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: center;
+  color: #e64c33;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  line-height: 25px;
+  border-radius: 15px;
+}
+
+/* line 189, ../sass/estilo.scss */
+table.horario {
+  background: #f3f3f3;
+}
+
+/* line 194, ../sass/estilo.scss */
+.descripcion {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* line 201, ../sass/estilo.scss */
+.nomenclatura li {
+  list-style-type: none;
+  float: left;
+  margin-right: 15px;
+}
+/* line 206, ../sass/estilo.scss */
+.nomenclatura li small {
+  display: flex;
+}
+/* line 210, ../sass/estilo.scss */
+.nomenclatura li i {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* line 220, ../sass/estilo.scss */
+.container-menu {
+  background-color: #2f3744;
+}
+/* line 223, ../sass/estilo.scss */
+.container-menu .navbar {
+  margin-left: -20px;
+}
+/* line 227, ../sass/estilo.scss */
+.container-menu .nav-link {
+  color: #ffffff;
+}
+
+/* line 232, ../sass/estilo.scss */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 237, ../sass/estilo.scss */
+.contenido {
+  background: #ffffff;
+  padding-bottom: 20px;
+}
+/* line 241, ../sass/estilo.scss */
+.contenido h2 {
+  background-color: #51617b;
+  padding: 10px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+/* line 250, ../sass/estilo.scss */
+.contenido .datos-usuario {
+  background: rgba(79, 79, 79, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+/* line 255, ../sass/estilo.scss */
+.contenido .datos-usuario legend {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgba(79, 79, 79, 0.1);
+}
+
+/* line 264, ../sass/estilo.scss */
+.filtros .btn {
+  background-color: #e64c33;
+  border-color: #e64c33;
+  border-radius: 5px;
+  margin: 0 5px 10px 0;
+}
+/* line 270, ../sass/estilo.scss */
+.filtros .btn:hover {
+  background-color: #e64c33 !important;
+  opacity: .8 !important;
+  border-color: #e64c33 !important;
+}
+/* line 276, ../sass/estilo.scss */
+.filtros .btn .badge {
+  margin-left: 5px;
+  color: #e64c33;
+}
+
+/* line 283, ../sass/estilo.scss */
+.nav-tabs {
+  border-bottom: 3px solid #e64c33;
+  margin-bottom: 20px;
+}
+/* line 289, ../sass/estilo.scss */
+.nav-tabs .nav-item a {
+  color: #4f4f4f;
+}
+/* line 292, ../sass/estilo.scss */
+.nav-tabs .nav-item a:hover {
+  background: #edeef0;
+  border-bottom: none;
+}
+/* line 298, ../sass/estilo.scss */
+.nav-tabs .nav-item .active {
+  background-color: #e64c33;
+  border-color: #e64c33;
+  color: #ffffff;
+}
+/* line 303, ../sass/estilo.scss */
+.nav-tabs .nav-item .active:hover {
+  background-color: #e64c33;
+}
+
+/* line 311, ../sass/estilo.scss */
+.lista thead {
+  color: #ffffff;
+}
+/* line 314, ../sass/estilo.scss */
+.lista thead th {
+  padding: 5px 10px;
+}
+/* line 320, ../sass/estilo.scss */
+.lista td {
+  padding: 5px 10px;
+}
+
+/* line 325, ../sass/estilo.scss */
+.btn {
+  background-color: #51617b;
+  border-color: #51617b;
+  color: #ffffff;
+}
+/* line 330, ../sass/estilo.scss */
+.btn:hover {
+  background-color: #51617b !important;
+  border-color: #51617b !important;
+  opacity: .8;
+}
